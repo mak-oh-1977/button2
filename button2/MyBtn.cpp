@@ -92,6 +92,8 @@ void CMyBtn::DrawItem(LPDRAWITEMSTRUCT pDrawItemStruct)
 		CString s;
 		GetWindowText(s);	
         dc.SetBkMode(TRANSPARENT);
+        dc.SetTextColor(RGB(120, 120, 120));
+        dc.TextOutW(11, 11, s);
         dc.SetTextColor(RGB(255, 255, 255));
         dc.TextOutW(10, 10, s);
         dc.Detach();
